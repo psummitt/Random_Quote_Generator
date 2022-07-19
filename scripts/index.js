@@ -6,7 +6,7 @@ function randomQuote() {
         success: function (quoteData) {
 
             if (quoteData.quoteAuthor === '') {
-                quoteData.quoteAuthor = 'Unknown';
+                quoteData.quoteAuthor = 'unknown';
             };
 
             $("#randomQuote").html("<p id='randomQuote'><i class=\"fa fa-quote-left\"></i>    " + quoteData.quoteText + "<br/> <div class=\"text-right\"> ‐" + quoteData.quoteAuthor + "</div></p>");
